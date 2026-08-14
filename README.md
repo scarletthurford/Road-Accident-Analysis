@@ -1,6 +1,7 @@
 # Road Casualties Analysis
 
 <img width="900" height="500" alt="Screenshot 2026-08-14 at 15 52 58" src="https://github.com/user-attachments/assets/e2cdbc3f-9597-4902-8d69-2be7e4f307fa" />
+*An interactive dashboard showing the...*
 
 ## Contents
 - [Overview](#overview)
@@ -37,20 +38,20 @@ UK road accident data spanning 2021–2022, sourced from [Kaggle](https://www.ka
 ## Process
 ### Data Cleaning
 The process of data cleaning and transformation in Power Query involved:
-- Checking data consistency, e.g. converting the `Accident_Date` column to the correct Date format (UK locale).
-- Removing redundant columns, such as `Accident_Index`.
-- Grouping columns with low-frequency values, e.g. combining `Van / Goods 3.5 tonnes mgw or under` into a broader `Van` category within `Vehicle_Type`
+- Checking data consistency, e.g. converting the **Accident_Date** column to the correct Date format (UK locale).
+- Removing redundant columns, such as **Accident_Index**.
+- Grouping columns with low-frequency values, e.g. combining **Van / Goods 3.5 tonnes mgw or under** into a broader **Van** category within **Vehicle_Type**.
 
 ### Data Modelling
 - Created a Calendar table using `CALENDAR(MIN('Road Accident Data'[Accident Date]), MAX('Road Accident Data'[Accident Date]))` to cover the full date range.
 - Marked the Calendar table as a Date Table to enable accurate time intelligence functions.
-- Built a star schema, connecting the fact table (`Road Accident Data`) to the `Calendar` date table via a one-to-many relationship.
+- Built a star schema, connecting the fact table (**Road Accident Data**) to the **Calendar** date table via a one-to-many relationship.
 
 ### DAX Measures
 Key measures developed include:
 - **Time intelligence**: year-to-date and year-over-year comparisons using `TOTALYTD` and `SAMEPERIODLASTYEAR`.
 - **Filtering**: used `KEEPFILTERS` within `CALCULATE` to preserve existing month-level filters when applying year-based logic. This measure was used to create the 2021-2022 monthly trend chart.
-- **Custom KPIs**: casualty count for the current year (2022) and prior year (2021), as well as casualty count broken down by severity (`Fatal`, `Serious`, `Slight`), and casualty change (current vs. prior year).
+- **Custom KPIs**: casualty count for the current year (2022) and prior year (2021), as well as casualty count broken down by severity (**Fatal**, **Serious**, **Slight**), and casualty change (current vs. prior year).
 
 ### Visualisation
 Designed an interactive dashboard including:
