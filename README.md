@@ -1,6 +1,6 @@
 # Road Casualties Analysis
 
-<img width="900" height="500" alt="Screenshot 2026-08-14 at 14 24 20" src="https://github.com/user-attachments/assets/80b73c1b-66f4-4a9f-9262-5711b591cad5" />
+<img width="900" height="500" alt="Screenshot 2026-08-14 at 15 52 58" src="https://github.com/user-attachments/assets/e2cdbc3f-9597-4902-8d69-2be7e4f307fa" />
 
 ## Contents
 - [Overview](#overview)
@@ -16,7 +16,7 @@
 - [Future Improvements](#future-improvements)
 
 ## Overview
-An analysis of 20222 UK traffic accident data to identify the key predictors of road casualties, surfacing insights that can support road safety improvements.
+An analysis of 2022 UK traffic accident data to identify the key predictors of road casualties, surfacing insights that can support road safety improvements.
 
 ## Dataset
 UK road accident data spanning 2021–2022, sourced from [Kaggle](https://www.kaggle.com/datasets/atharvasoundankar/road-accidents-dataset/code).
