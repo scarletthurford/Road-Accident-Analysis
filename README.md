@@ -1,7 +1,8 @@
 # Road Casualties Analysis
 
 <img width="900" height="500" alt="Screenshot 2026-08-14 at 15 52 58" src="https://github.com/user-attachments/assets/e2cdbc3f-9597-4902-8d69-2be7e4f307fa" />
-*An interactive dashboard showing the...*
+
+*An interactive Power BI dashboard summarising UK road casualties by vehicle type, road and weather conditions, location, and year-on-year trends.*
 
 ## Contents
 - [Overview](#overview)
